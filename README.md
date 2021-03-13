@@ -1,2 +1,2 @@
-# low_poly_filter
-A quick experiment to turn images into low-poly versions
+# Toucan
+Give your images an artsy low-poly effect.
