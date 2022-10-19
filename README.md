@@ -10,7 +10,7 @@ The points are determined using Poisson disc sampling, SIFT keypoints and a Cann
 -----
 ## Gallery
 
-Some examples of results:
+Some examples of results. All original images are from _[unsplash.com](https://unsplash.com/)_
 
 
 ![t1](./doc/gallery/t1_.png)
