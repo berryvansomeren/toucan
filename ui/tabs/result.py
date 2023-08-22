@@ -1,4 +1,5 @@
 import numpy as np
+from pathlib import Path
 from typing import List
 
 from PySide6 import QtCore, QtWidgets
@@ -82,8 +83,9 @@ class TabResult( QtWidgets.QWidget ):
         extend_if_not_none( vertices, self.sift_points      )
         extend_if_not_none( vertices, self.edge_points      )
 
-        cv_delauney_image = get_delauney_image( self.clean_cv_image, vertices )
-        self.image_widget.set_cv_image( cv_delauney_image )
+        cv_image, svg_image = get_delauney_image( self.clean_cv_image, vertices )
+        self.image_widget.set_cv_image( cv_image )
+        self.svg_image = svg_image
 
     # ----------------------------------------------------------------
     @QtCore.Slot()
@@ -109,6 +111,8 @@ class TabResult( QtWidgets.QWidget ):
             # todo: add more checks based on the save_url, it could for example not have a file extension yet
         if save_url_is_valid:
             save_cv_image( save_url, self.image_widget.image.cv_image )
-            popup_message( f'Successfully saved results to "{save_url}".' )
+            svg_output_path = Path( save_url ).with_suffix('.svg')
+            self.svg_image.saveas( svg_output_path )
+            popup_message( f'Successfully saved results to "{save_url}" and "{svg_output_path}".' )
         else:
             popup_message( f'Could not save results to "{save_url}".' ) # todo: add reason to message

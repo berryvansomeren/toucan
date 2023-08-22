@@ -3,3 +3,4 @@
 opencv-python
 pyside6
 scipy
+svgwrite
