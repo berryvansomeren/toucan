@@ -18,24 +18,24 @@ Some examples of results. All original images are from _[unsplash.com](https://u
 
 <div align="center">
     <div >
+        <a href="https://github.com/berryvansomeren/toucan/assets/6871825/4fb2f45a-7d82-4911-b5a2-f811a4d8c007">
+            <img src="./doc/gallery/t1.png" width="40%">
+        </a>
         <a href="https://github.com/berryvansomeren/toucan/assets/6871825/d40b691e-e336-4a30-a128-b2d619c4e5a7">
             <img src="./doc/gallery/t2.png" width="40%">
         </a>
-        <a href="https://github.com/berryvansomeren/toucan/assets/6871825/61770ffd-2ff4-4801-809c-5be1adcdd4b9">
-            <img src="./doc/gallery/t3.png" width="40%">
-        </a>
     </div>
     <div>
-        <a href="https://github.com/berryvansomeren/toucan/assets/6871825/4fb2f45a-7d82-4911-b5a2-f811a4d8c007">
-            <img src="./doc/gallery/t1.png" width="40%">
+        <a href="https://github.com/berryvansomeren/toucan/assets/6871825/b76389b0-5913-47f7-bf3c-c9e65757fdd4">
+            <img src="./doc/gallery/t5.png" width="40%">
         </a>
         <a href="https://github.com/berryvansomeren/toucan/assets/6871825/08b851b3-d0eb-4a4a-a4c0-a49f6dffece8">
             <img src="./doc/gallery/t6.png" width="40%">
         </a>
     </div>
     <div>
-        <a href="https://github.com/berryvansomeren/toucan/assets/6871825/b76389b0-5913-47f7-bf3c-c9e65757fdd4">
-            <img src="./doc/gallery/t5.png" width="40%">
+        <a href="https://github.com/berryvansomeren/toucan/assets/6871825/61770ffd-2ff4-4801-809c-5be1adcdd4b9">
+            <img src="./doc/gallery/t3.png" width="40%">
         </a>
         <a href="https://github.com/berryvansomeren/toucan/assets/6871825/17162b60-0fcf-4686-b48d-2760f5141289">
             <img src="./doc/gallery/t4.png" width="40%">
