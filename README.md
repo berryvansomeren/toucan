@@ -4,8 +4,10 @@
 ![test](./ui/toucan_icon_100_100.png)
 
 **Toucan** gives your images an artsy low-poly effect.   
+
 We do so by creating a Delauney triangulation over a set of points.  
-The points are determined using Poisson disc sampling, SIFT keypoints and a Canny edge detector.  
+The points are determined using Poisson disc sampling, SIFT keypoints,  
+and sampling over the edges detected using a Canny edge detector.  
 Results are saved as SVG and PNG.
 
 -----
