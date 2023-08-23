@@ -96,13 +96,13 @@ class TabResult( QtWidgets.QWidget ):
 
         original_file_path = self.main_window.tab_load.chosen_image_path
         stem = str( original_file_path.stem )
-        suggested_save_url_str = str( original_file_path.parent ) + '/' + stem + '_low_poly.png'
+        suggested_save_url_str = str( original_file_path.parent ) + '/' + stem + '_low_poly.svg'
         suggested_save_url = QtCore.QUrl.fromLocalFile( suggested_save_url_str )
         save_url, save_filters = QtWidgets.QFileDialog.getSaveFileUrl(
             self,
             'Choose a file to save to',
             suggested_save_url,
-            filter = 'Images (*.png *.jpg)' # todo: need to fix this filter
+            filter = 'SVG Images (*.svg)' # todo: need to fix this filter
         )
         save_url = save_url.toLocalFile()
         save_url_is_valid = True
@@ -110,9 +110,9 @@ class TabResult( QtWidgets.QWidget ):
             save_url_is_valid = False
             # todo: add more checks based on the save_url, it could for example not have a file extension yet
         if save_url_is_valid:
-            save_cv_image( save_url, self.image_widget.image.cv_image )
-            svg_output_path = Path( save_url ).with_suffix('.svg')
-            self.svg_image.saveas( svg_output_path )
-            popup_message( f'Successfully saved results to "{save_url}" and "{svg_output_path}".' )
+            self.svg_image.saveas( save_url )
+            png_output_path = str( Path( save_url ).with_suffix('.png') )
+            save_cv_image( png_output_path, self.image_widget.image.cv_image )
+            popup_message( f'Successfully saved results as SVG to "{save_url}" and as PNG to "{png_output_path}".' )
         else:
             popup_message( f'Could not save results to "{save_url}".' ) # todo: add reason to message
