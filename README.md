@@ -13,9 +13,7 @@ Results are saved as SVG and PNG.
 
 Some examples of results. All original images are from _[unsplash.com](https://unsplash.com/)_
 
-
 **Make sure to click these images to open the corresponding *SVGs*!**
-
 
 
 <div align="center">
