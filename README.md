@@ -3,6 +3,8 @@
 # Toucan 
 ![test](./ui/toucan_icon_100_100.png)
 
+(Also see my blogpost [**here**](https://www.berryvansomeren.com/posts/toucan))
+
 **Toucan** gives your images an artsy low-poly effect.   
 
 We do so by creating a Delauney triangulation over a set of points.  
@@ -76,7 +78,7 @@ By sampling the edges using a Canny edge detector, we can bring back a bit more 
 ![toucan_edges](./doc/toucan_edges.png)
 
 -----
-Finally to bring back some final highlights we sample some SIFT keypoints:
+Finally, to bring back some final highlights we sample some SIFT keypoints:
 
 ![toucan_keypoints](./doc/toucan_keypoints.png)
 
