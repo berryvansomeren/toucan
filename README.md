@@ -3,7 +3,7 @@
 # Toucan 
 ![test](./ui/toucan_icon_100_100.png)
 
-(Also see my blogpost [**here**](https://www.berryvansomeren.com/posts/toucan))
+**Also see my blogpost [HERE](https://www.berryvansomeren.com/posts/toucan)** :sparkles:
 
 **Toucan** gives your images an artsy low-poly effect.   
 
